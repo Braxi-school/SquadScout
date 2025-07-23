@@ -1,0 +1,174 @@
+/* styles.css - Basic CSS setup */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background-image: url('Images/BG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #00ffff #222;
+}
+
+/* For Webkit browsers */
+body::-webkit-scrollbar {
+    width: 8px;
+    background: #222;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #00ffff;
+    border-radius: 4px;
+}
+
+
+p {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    
+}
+
+/* Navbar */
+
+.cool-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+    color: white;
+  }
+  
+  .cool-navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #363636;
+  }
+  
+  .nav-button {
+    padding: 0.5rem 1rem;
+    background: rgba(0, 255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    border-radius: 8px;
+    transition: background 0.3s, border 0.3s;
+  }
+  .nav-button:hover {
+    background: rgba(0, 255, 255, 0.4);
+    border-color: rgba(0, 255, 255, 0.8);
+    color: #000;
+  }
+  
+
+/* Cards */
+.info-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 2.5rem;
+    color: white;
+    max-width: 400px;
+    margin: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    line-height: 1.8;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.card-btn {
+    flex: 1;
+    background: rgba(0, 255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card-btn:hover {
+    background: rgba(0, 255, 255, 0.4);
+    border-color: rgba(0, 255, 255, 0.8);
+    color: black;
+}
+
+.card-btnlogin {
+    flex: 1;
+    background: rgba(1, 90, 90, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card-btnlogin:hover {
+    background: rgba(0, 44, 44, 0.2);
+    border-color: rgba(0, 255, 255, 0.8);
+    color: black;
+}
+
