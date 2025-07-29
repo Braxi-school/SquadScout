@@ -17,10 +17,11 @@ body {
     justify-content: center;
     min-height: 100vh;
 
-    background-image: url('Images/BG.png');
+    background-image: url('Images/endless-constellation.svg');
     background-size: cover;
     background-position: center;
     background-repeat: repeat-y;
+    background-repeat: repeat-x;
 
     overflow-y: auto;
     scrollbar-width: thin;
