@@ -1,2 +1,2 @@
-It’s a website that helps Scouting troops manage their members, activities, and records easily and efficiently.
-It is made by Scouts for Scouts
+Squad Scout is a website that helps Scouting troops manage their members, activities, and records easily and efficiently.
+Made for Scouts by Scouts
